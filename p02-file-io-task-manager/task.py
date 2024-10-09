@@ -21,3 +21,6 @@ class Task:
             desc = task_dict['description'],
             status = task_dict['status']
         )
+    
+    def __str__(self):
+        return f"ID: {self.id:02d}\nSTATUS: {self.status}\nTITLE: {self.title}\nDESCRIPTION: {self.desc}"
