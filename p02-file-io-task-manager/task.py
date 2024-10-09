@@ -23,4 +23,4 @@ class Task:
         )
     
     def __str__(self):
-        return f"ID: {self.id:02d}\nSTATUS: {self.status}\nTITLE: {self.title}\nDESCRIPTION: {self.desc}"
+        return f"{"ID".ljust(12)}: {self.id:02d}\n{"STATUS".ljust(12)}: {self.status}\n{"TITLE".ljust(12)}: {self.title}\n{"DESCRIPTION".ljust(12)}: {self.desc}"
